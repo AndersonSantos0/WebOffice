@@ -1,0 +1,309 @@
+div#port{
+	width: 100%;
+	height: calc(100vh - 180px);
+	background: url('../img/port.jpg');
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	z-index: 1;
+	margin-top: 60px;
+}
+div#port:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(90deg, #333, #888);
+	opacity: .3;
+}
+div#port:after{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(0deg, #000, transparent, #000);
+	opacity: .8;
+	z-index: -1;
+	transition: .4s;
+}
+div#port:hover:after{ opacity: 1; }
+div#port h1{
+	position: absolute;
+	z-index: 10;
+	top: calc(50% - 40px);
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 80px;
+	font-family: comforta;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	transition: .4s;
+	cursor: default;
+}
+div#port h1:hover{ text-shadow: 0 0 5px #fff; }
+div#port a.mainButton{
+	text-decoration: none;
+	font-family: comforta;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: calc(50% + 40px);
+	transform: translate(-50%,-50%);
+	padding: 15px 20px;
+	border-radius: 50px;
+	color: white;
+	font-size: 20px;
+	text-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	box-shadow: 2px 2px 5px rgba(0,0,0,.2);
+	overflow: hidden;
+	width: 235px;
+	height: 25px;
+	line-height: 25px;
+	transition: .4s;
+}
+div#port a i{
+	position: absolute;
+	top: 15px;
+	left: 260px;
+	opacity: 0;
+	transition: .4s;
+}
+div#port a.mainButton.on{
+	width: 270px;
+}
+div#port a.mainButton.on i{
+	opacity: 1;
+}
+div#port a.mainButton:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: -webkit-linear-gradient(40deg, #11998e, #38ef7d);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	transition: .2s;
+}
+
+
+/*-- FormataÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o dos cubos --*/
+
+div#port div.box{
+	width: 200px;
+	height: 200px;
+	border: solid 2px #38d77d;
+	position: absolute;
+	filter: drop-shadow(0 0 5px #38d77d);
+	border-radius: 5px;
+	box-sizing: content-box;
+	transition: .4s;
+	transform: rotateZ(45deg);
+}
+div#port div.box:hover{
+	filter: drop-shadow(0 0 5px #fff);
+	border-color: #fff;
+}
+
+/*-- FormataÃƒÆ’Ã‚Â§ÃƒÆ’Ã‚Â£o dos cubos individualmente --*/
+
+div#port div.box.cube1{ bottom: 50px; left: -110px; }
+div#port div.box.cube2{ bottom: -110px; left: 80px; }
+div#port div.box.cube3{ top: 50px; right: -110px; }
+div#port div.box.cube4{ top: -110px; right: 80px; width: 250px; height: 250px; }
+div#port div.box.cube6{ top: 00px; left: 90px; width: 400px; height: 400px; }
+div#port div.box.cube7{ bottom: -210px; right: 150px; width: 400px; height: 400px; }
+div#port div.box.cube8{ top: 100px; right: 200px; width: 400px; height: 400px; }
+
+/*----------*/
+
+div.counter{
+	width: 100%;
+	background-color: #333;
+	/* height: 120px; */
+	display: flex;
+	justify-content: center;
+}
+div.counter section{
+	display: flex;
+	max-width: 900px;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+	padding: 16px;
+}
+div.counter section div.counterContainer{
+	display: flex;
+	color: #fff;
+	font-family: 'comforta';
+	font-size: 20px;
+	max-width: 200px;
+	flex: 1;
+	position: relative;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+div.counter section div div.counterIcon{
+	display: flex;
+	width: 80px;
+}
+div.counter section div div.counterContent{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+div.counter section div img{
+	width: 80px;
+	height: 80px;
+}
+div.counter section div h2{
+	font-weight: 100;
+	font-size: 16px;
+	color: #38d77d;
+}
+
+/* tutorial */
+
+div.tutorial{
+	background-color: #444;
+	font-family: 'comforta';
+	padding: 50px 0;
+}
+div.tutorial h1{
+	margin-bottom: 50px;
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+}
+div.tutorial section{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	/* height: 260px; */
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+}
+div.tutorial section div{
+	position: relative;
+	min-height: 300px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 16px 0;
+}
+div.tutorial section div div{
+	position: relative;
+	min-height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 16px 0;
+}
+div.tutorial section div div h2{
+	color: #38d77d;
+	font-weight: 100;
+	text-align: center;
+	/* position: absolute; */
+	/* bottom: 0; */
+	/* left: 0; */
+	width: 100%;
+}
+div.tutorial section div div p{
+	width: 200px;
+	text-align: center;
+	/* position: absolute; */
+	/* left: 50%; */
+	/* transform: translateX(-50%); */
+	/* top: calc(100% + 10px); */
+	color: #fff;
+}
+div.tutorial a{
+	background: -webkit-linear-gradient(40deg, #11998e, #38ef7d);
+	display: block;
+	text-decoration: none;
+	font-family: comforta;
+	padding: 15px 25px;
+	border-radius: 5px;
+	color: white;
+	font-size: 20px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.2);
+	overflow: hidden;
+	width: 235px;
+	height: 25px;
+	line-height: 25px;
+	transition: .4s;
+	margin: auto;
+	width: 240px;
+}
+/* Join */
+div.join{
+	position: relative;
+	background: url('../img/join.jpg')no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+	box-sizing: border-box;
+	font-family: 'comforta';
+	color: #fff;
+
+}
+div.join:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: linear-gradient(180deg, #333, rgba(0, 0, 0, .5));
+}
+div.join h1{
+	position: relative;
+	z-index: 2;
+	font-weight: 100;
+	text-align: center;
+	top: 45%;
+	transform: translateY(-50%);
+}
+
+/* min-sobre */
+
+div.min-sobre{
+	display: flex;
+	flex: 1;
+	padding: 50px 0;
+	padding-bottom: 100px;
+	background: #333;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+div.min-sobre h1{
+	margin-bottom: 50px;
+	text-align: center;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'comforta';
+}
+div.min-sobre p{
+	width: 80%;
+	text-align: center;
+	font-family: 'poppins';
+	color: #fff;
+}
+
+@media screen and (max-width: 620px ){
+	div.counter section div.counterContainer{
+		flex-direction: column;
+	}
+}

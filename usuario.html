@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="Js/jQuery.js"></script>
+	<script src="Js/main.js"></script>
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/user.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- Menu Principal -->
+
+	<nav id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Projetos.html">Projetos</a></li>
+			<li><a href="FreeLancers.html">FreeLancers</a></li>
+		</ul>
+	
+	<div id="pesquisa">
+		<input type="text" placeholder="Pesquisar">
+		<div>
+			<img src="svg/lup.svg"/>
+		</div>
+		<p>Projetos &#9662;</p>
+	</div>
+
+	<!-- Menu dos Usuários -->
+
+	<div id="user">
+			<p>Anderson</p>
+		<div id="user-pic"></div>
+	</div>
+	</nav>
+
+	<!-- Select do Usuário -->
+
+	<div id="user-select">
+		<ul>
+			<li><a href="config.html"><img src="svg/config.svg"> Config</a></li>
+			<li class="active"><a href="#"><img src="svg/perfil.svg"> Perfil</a></li>
+			<li><a href="#"><img src="svg/projeto.svg"> Projetos</a></li>
+			<li><a href="#"><img src="svg/logout.svg"> Logout</a></li>
+		</ul>
+    </div>
+
+    <div class="port"></div>
+
+    <div class="interface">
+        <section class="perfil">
+
+            <div class="user-pic" style="background-image: url('img/Dev.jpeg');"></div><br>
+
+            <h1>Anderson da Silva Santos</h1>
+            <h4>Web Designer</h4><br><br>
+
+            <br><div class="rate"><span></span><span></span><span></span><span></span><span></span></div><br>
+            <h5>Projetos Publicados: <b>0</b></h5>
+            <h5>Projetos Concluídos: <b>0</b></h5>
+
+            <h3>Habilidades</h3>
+            <div class="skills">
+                    <p class="skill">HTML5</p>
+					<p class="skill">CSS3</p>
+					<p class="skill">JavaScript</p>
+					<p class="skill">PHP</p>
+					<p class="skill">jQuery</p>
+					<p class="skill">Ajax</p>
+					<p class="skill">Json</p>
+					<p class="skill">Jnode</p>
+					<p class="skill">jQuery</p>
+					<p class="skill">Python</p>
+					<p class="skill">Ajax</p>
+					<p class="skill">Json</p>
+            </div>
+
+        </section>
+
+        <section class="bio">
+            <h1>Biografia</h1><br>
+            <p>Sou um jovem de 16 anos com o objetivo de entrar no mercado de trabalho na área de WebDesign, possuo facilidade em aprenzidado na área de informática e sou muito esforçado quando se trata de um projeto, quero construir minha carreira passo a passo, por isso criei este perfil e espero que possa me ajudar a alcançar o meu objetivo, preciso apenas da sua confiança.
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+		<div class="container">
+			<div class="sobre block">
+				<h1>Quem somos?</h1>
+				<ul>
+					<li><a href="sobre.html">Sobre nós</a></li>
+					<li>Guias</li>
+					<li>Politica de privacidade</li>
+					<li>Termos de serviço</li>
+					<li>politicas do WebOffice</li>
+					<li>Una-se a nós</li>
+				</ul>
+			</div>
+			<!--------->
+			<div class="fale block" style="width: 40%">
+				<h1>Fale Conosco</h1>
+				<form action="">
+					<input type="text" name="nome" id="nome" placeholder="Nome">
+					<input type="email" name="email" id="email" placeholder="E-mail">
+					<select name="assunto" id="assunto">
+						<option value="Duvida">Duvida</option>
+						<option value="Reclamacao">Reclamação</option>
+						<option value="ReportB">Report Bug</option>
+						<option value="Outros">Outros</option>
+					</select>
+					<textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
+			<!---------->
+			<div class="contato block">
+				<h1>WebOffice</h1>
+				<div class="subContainer">
+					<div class="rede facebook" style="background-image: url('svg/facebook.svg')"></div>
+					<div class="rede linkedin" style="background-image: url('svg/linkedin.svg')"></div>
+					<div class="rede twitter" style="background-image: url('svg/twitter.svg')"></div>
+					<div class="rede whatsapp" style="background-image: url('svg/whatsapp.svg')"></div>
+				</div>
+			</div>
+		</div>
+		<section class="subfooter">2019 &copy; WebOffice</section>
+	</footer>
+</body>
+</html>

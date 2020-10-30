@@ -1,0 +1,7 @@
+section.content{
+    box-sizing: border-box;
+    color: #333;
+    padding: 15px;
+    font-family: 'poppins';
+    flex: 2,
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="Js/jQuery.js"></script>
+	<script src="Js/mask.js"></script>
+	<script src="Js/main.js"></script>
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- Menu Principal -->
+
+	<nav id="menu">
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="Projetos.html">Projetos</a></li>
+			<li><a href="FreeLancers.html">FreeLancers</a></li>
+		</ul>
+	
+	<div id="pesquisa">
+		<input type="text" placeholder="Pesquisar">
+		<div>
+			<img src="svg/lup.svg"/>
+		</div>
+		<p>Projetos &#9662;</p>
+	</div>
+
+	<!-- Menu dos Usuários -->
+
+	<div id="user">
+			<p>Anderson</p>
+		<div id="user-pic"></div>
+	</div>
+	</nav>
+
+	<!-- Select do Usuário -->
+
+	<div id="user-select">
+		<ul>
+			<li><a href="config.html"><img src="svg/config.svg"> Config</a></li>
+			<li><a href="usuario.html"><img src="svg/perfil.svg"> Perfil</a></li>
+			<li><a href="#"><img src="svg/projeto.svg"> Projetos</a></li>
+			<li><a href="#"><img src="svg/logout.svg"> Logout</a></li>
+		</ul>
+	</div>
+
+	<!-- Portifólio -->
+
+	<div id="port">
+		
+		<h1>WebOffice</h1>
+
+		<a class="mainButton" href="Acesso.html">Começar a programar <i id="mArrow">&#9658;&#9658;</i></a>
+
+		<div class="box cube1"></div>
+		<div class="box cube2"></div>
+		<div class="box cube3"></div>
+		<div class="box cube4"></div>
+	</div>
+
+	<div class="counter">
+		<section>
+			<div class="counterContainer">
+				<div class="counterIcon">
+					<img src="svg/freelancers.svg">
+				</div>
+				<div class="counterContent">
+					<p class="count">1758358</p>
+					<h2>Freelancers</h2>
+				</div>
+			</div>
+			<div class="counterContainer">
+				<div class="counterIcon">
+					<img src="svg/projetos.svg">
+				</div>
+				<div class="counterContent">
+					<p class="count">27918</p>
+					<h2>Projetos</h2>
+				</div>
+			</div>
+			<div class="counterContainer">
+				<div class="counterIcon">
+					<img src="svg/empresas.svg">
+				</div>
+				<div class="counterContent">
+					<p class="count">1208868</p>
+					<h2>Empresas</h2>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="min-sobre">
+		<h1>Somos a WebOffice</h1>
+		<p>A Web Office é uma rede voltada para a comunicação sobre desenvolvimento de projetos entre FreeLancers e Empresas, em meio a uma dificuldade notada pelos criadores em encontrar projetos na área de TI. Sendo uma empresa nova no ramo, nos preocupamos em trazer inovações e tecnológicas para a segurança do desenvolvimento dos projetos buscando sempre o melhor aos nossos usuários.</p>
+	</div>
+
+	<div class="join">
+		<h1>Facilitando o trabalho das empresas, e a vida dos freelancers</h1>
+	</div>
+
+	<div class="tutorial">
+		<h1>É fácil de usar!</h1>
+		<section>
+			<div>
+				<div>
+					<img src="svg/tutorial-3.svg">
+					<h2>Publicar</h2>
+					<p>O que precisa?, quando precisa?, quanto está disposto a pagar?</p>
+				</div>
+				<div>
+					<img src="svg/tutorial-4.svg">
+					<h2 style="left: 10px">Negociar</h2>
+					<p style="left: calc(50% + 10px)">Propostas de pessoal qualificado, o poder de escolha está em suas mãos!</p>
+				</div>
+			</div>
+			<div>
+				<div>
+					<img src="svg/tutorial-1.svg">
+					<h2>Desenvolver</h2>
+					<p>A parte mais importante é iniciada, o desenvolvimento do projeto!</p>
+				</div>
+				<div>
+					<img src="svg/tutorial-2.svg">
+					<h2>Concluir</h2>
+					<p>Projeto concluído, dinheiro depositado, trabalho encerrado com sucesso!</p>
+				</div>
+			</div>
+		</section>
+		<a href="Acesso.html">Começar a Programar!</a>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="sobre block">
+				<h1>Quem somos?</h1>
+				<ul>
+					<li><a href="sobre.html">Sobre nós</a></li>
+					<li>Guias</li>
+					<li>Politica de privacidade</li>
+					<li>Termos de serviço</li>
+					<li>politicas do WebOffice</li>
+					<li>Una-se a nós</li>
+				</ul>
+			</div>
+			<!--------->
+			<div class="fale block" style="width: 40%">
+				<h1>Fale Conosco</h1>
+				<form action="">
+					<input type="text" name="nome" id="nome" placeholder="Nome">
+					<input type="email" name="email" id="email" placeholder="E-mail">
+					<select name="assunto" id="assunto">
+						<option value="Duvida">Duvida</option>
+						<option value="Reclamacao">Reclamação</option>
+						<option value="ReportB">Report Bug</option>
+						<option value="Outros">Outros</option>
+					</select>
+					<textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+					<input type="submit" value="Enviar">
+				</form>
+			</div>
+			<!---------->
+			<div class="contato block">
+				<h1>WebOffice</h1>
+				<div class="subContainer">
+					<div class="rede facebook" style="background-image: url('svg/facebook.svg')"></div>
+					<div class="rede linkedin" style="background-image: url('svg/linkedin.svg')"></div>
+					<div class="rede twitter" style="background-image: url('svg/twitter.svg')"></div>
+					<div class="rede whatsapp" style="background-image: url('svg/whatsapp.svg')"></div>
+				</div>
+			</div>
+		</div>
+		<section class="subfooter">2019 &copy; WebOffice</section>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,140 @@
+div.port{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 60px;
+    background: url('../img/config.jpg')no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+div.port:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(90deg, #333, #11998e, #38ef7d);
+	opacity: .3;
+}
+div.interface{
+	height: 650px;
+	min-height: unset;
+}
+div.interface aside{
+	position: relative;
+	background-color: white;
+	width: 300px;
+	height: unset;
+	top: 5px;
+	margin-bottom: 28px;
+	border-radius: 0;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	padding: 0;
+}
+
+div.interface aside ul.configs li {
+	line-height: 40px;
+	display: flex;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10px 0;
+	border-left: solid 3px transparent;
+	box-sizing: border-box;
+	padding-left: 10px;
+	border-bottom: none;
+	transition: .4s;
+}
+div.interface aside ul.configs li:hover{
+	border-left-color: #3a63d5;
+	background-color: #eee;
+}
+div.interface aside ul.configs li  p{
+	width: 100%;
+	font-family: 'comforta';
+	margin-left: 10px;
+}
+
+div.interface aside ul.configs li img{
+	height: 40px;
+	width: 40px;
+}
+
+div.interface section{
+	width: 680px;
+	position: relative;
+	background-color: white;
+	margin: 15px 10px;
+	border-radius: 0;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	font-family: comforta;
+	box-sizing: border-box;
+	padding: 10px;
+}
+
+div.interface h1{
+	font-family: 'Staa';
+	color: #333;
+	font-weight: 100;
+	font-size: 30px;
+}
+div.interface h1.titulo{
+	padding: 10px 5px;
+	border-bottom: 1px solid #999;
+}
+div.interface ul{
+	list-style: none;
+	box-sizing: border-box;
+}
+div.interface ul li{
+	display: flex;
+	border-bottom: 1px solid #eee;
+}
+div.interface ul li p{
+	width: 50%;
+	line-height: 40px;
+	color: #333;
+	font-weight: 600;
+}
+div.interface ul li p.right{
+	color: #666;
+	font-weight: 100;
+}
+form.geral{
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+form.geral input[type="submit"]{
+	background-color: #0AD254;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 16px;
+	font-family: comforta;
+	float: right;
+	position: relative;
+	top: 5px;
+	margin-bottom: 10px;
+}
+div.interface section form div{
+	line-height: 35px;
+}
+div.interface section form div input,div.interface section form div select{
+	width: 100%;
+	padding: 15px 10px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border: solid 1px #999;
+	margin-bottom: 5px;
+	outline: none;
+	transition: .4s;
+	font-family: comforta;
+	font-size: 15px;
+	background-color: transparent;
+}
+div.interface section form div input:focus{
+	border-color: #3a63d5;
+	box-shadow: 0 0 4px rgba(58, 99, 213, .5);
+}

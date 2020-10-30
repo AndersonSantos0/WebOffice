@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<script src="Js/jQuery.js"></script>
+	<script src="Js/main.js"></script>
+	<script src="Js/mask.js"></script>
+	<script src="Js/cadastro.js"></script>
+	<link rel="stylesheet" href="css/cadastro.css">
+	<meta charset="UTF-8">
+	<title>Cadastro</title>
+</head>
+<body>
+	<section class="cadF container-cadastro">
+        <div class="header">
+            <h1>Cadastro</h1>
+            <div class="switchOpt">
+                <h2>FreeLancer</h2>
+                <h2 class="switch">Empresa</h2>
+            </div>
+        </div>
+		<div class="switch"><img src="svg/perfil.svg"></div>
+		<form action="" method="get">
+		<div class="divnome cadiv">
+			<label for="nome">Nome</label>
+			<input type="text" id="nome" name="nome" required>
+		</div>
+		<div class="divsnome cadiv">
+			<label for="sobrenome">Sobrenome</label>
+			<input type="text" id="sobrenome" name="sobrenome" required>
+		</div>
+		<div class="divemail cadiv">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" required>
+		</div>
+		<div class="divcpf cadiv">
+			<img src="svg/medalhas/diploma.svg" class="switch-cpf">
+			<div class="cpf-free">
+				<label for="Fcpf">CPF</label>
+				<input type="text" id="Fcpf" name="Fcpf" class="cpf">
+			</div>
+			<div class="cnpj-free off">
+				<label for="Fcnpj">CNPJ</label>
+				<input type="text" id="Fcnpj" name="Fcnpj" class="cnpj">
+			</div>
+		</div>
+		<div class="divcep cadiv">
+			<label for="Fcep">CEP</label>
+			<input type="text" id="Fcep" name="Fcep" class="cep" required>
+			<p class="downinf">essa informação será privada para outros usuários</p>
+		</div>
+		<div class="divtel cadiv">
+			<label for="Ftel">Telefone</label>
+			<input type="text" id="Ftel" name="Ftel" class="tel" required>
+		</div>
+		<div class="divsenha cadiv">
+			<label for="senha">Senha</label>
+			<input type="password" id="senha" name="senha" required>
+		</div>
+		<div class="divcsenha cadiv">
+			<label for="csenha">Confirmar senha</label>
+			<input type="password" id="csenha" name="csenha" required>
+		</div>
+		<input type="submit" value="Cadastrar">
+		<a href="Acesso.html">Ja possuo uma conta</a>
+		</form>
+	</section>
+
+	<section class="cadE container-cadastro off" >
+        <div class="header">
+		<h1>Cadastro</h1>
+        <div class="switchOpt">
+            <h2 class="switch">Freelancer</h2>
+            <h2>Empresa</h2>
+        </div>
+        </div>
+		<div class="switch"><img src="svg/Empresa.svg"></div>
+		<form action="" method="post">
+		<div class="divEnome cadiv">
+			<label for="Enome">Nome empresa</label>
+			<input type="text" id="Enome" name="Enome">
+		</div>
+		<div class="divnomef cadiv">
+			<label for="nomef">Nome fantasia</label>
+			<input type="text" id="nomef" name="nomef">
+		</div>
+		<div class="divEemail cadiv">
+			<label for="Eemail">Email</label>
+			<input type="email" id="Eemail" name="Eemail">
+		</div>
+		<div class="divcnpj cadiv">
+			<label for="Ecnpj">CNPJ</label>
+			<input type="text" id="Ecnpj" name="Ecnpj" class="cnpj">
+		</div>
+		<div class="divEcep cadiv">
+			<label for="Ecep">CEP</label>
+			<input type="text" id="Ecep" name="Ecep" class="cep">
+			<p class="downinf">empresa fisica ou escritório</p>
+		</div>
+		<div class="divEtel cadiv">
+			<label for="Etel">Telefone</label>
+			<input type="text" id="Etel" name="Etel" class="tel">
+		</div>
+		<div class="divEsenha" cadiv">
+			<label for="Esenha">Senha</label>
+			<input type="password" id="Esenha" name="Esenha">
+		</div>
+		<div class="divEcsenha" cadiv">
+			<label for="Ecsenha">Confirmar senha</label>
+			<input type="password" id="Ecsenha" name="Ecsenha">
+		</div>
+		<input type="submit" value="Cadastrar">
+		<a href="Acesso.html">Ja possuo uma conta</a>
+		</form>
+	</section>
+</body>
+</html>

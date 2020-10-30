@@ -1,0 +1,121 @@
+div.port{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 60px;
+    background: url('../img/User-port.jpg')no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+div.port:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(90deg, #333, #11998e, #38ef7d);
+	opacity: .1;
+}
+
+/*=====*/
+
+div.interface{ top: 40vh;display: block; }
+div.interface section{
+    background-color: white;
+    width: 100%;
+    font-family: comforta;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    padding: 20px;
+    box-sizing: border-box;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+div.interface div.user-pic{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,.8)inset;
+    position: relative;
+    margin-right: 30px;
+    float: left;
+}
+div.interface section.perfil h1{
+    position: relative;
+    float: none;
+    font-size: 30px;
+    color: #333;
+    font-weight: 100;
+}
+div.interface section.perfil h3{
+    position: relative;
+    color: #333;
+    font-weight: 100;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+div.interface section.perfil h5{
+    font-weight: 100;
+    margin-bottom: 2px;
+    font-size: 15px;
+    color: #11998e
+}
+div.interface section.perfil h5 b{
+    color: #333;
+}
+div.interface section.perfil h4{
+    background-color: #11998e;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 2px;
+    position: relative;
+    float: left;
+    width: fit-content;
+    font-weight: 100;
+}
+div.interface section.perfil div.skills{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+div.interface section.perfil div.skills p.skill{
+    background-color: #444;
+    color: white;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0 3px;
+}
+div.interface section.bio h1{
+    position: relative;
+    font-size: 30px;
+    color: #333;
+    font-weight: 100;
+    font-family: comforta;
+    line-height: unset;
+}
+div.interface section.bio {
+    line-height: 25px;
+    color: #555;
+    text-align: justify;
+    font-family: poppins;
+}
+/*== Estrelas ==*/
+
+div.rate{
+    position: relative;
+    display: flex;
+    margin-bottom: 5px;
+}
+div.rate span{
+    width: 20px;
+    height: 20px;
+    margin: 0 3px;
+    display: block;
+    background: url('../svg/star.svg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}

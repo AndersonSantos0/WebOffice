@@ -1,0 +1,304 @@
+body{
+	background-color: #f3f9fc;
+}
+
+/*-- Portifólio --*/
+
+div#port{
+	width: 100%;
+	height: 50vh;
+	background: url('../img/port.jpg')no-repeat fixed;
+	position: relative;
+	top: 60px;
+	background-size: cover;
+	background-position: center;
+}
+div#port:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(90deg, #333, #11998e, #38ef7d);
+	opacity: .5;
+}
+div#port #container{
+	width: 300px;
+	height: 400px;
+	background: url('../img/man.jpg');
+	background-size: cover;
+	background-position: center;
+	border-radius: 15px;
+	position: absolute;
+	left: 50px;
+	bottom: -30px;
+	overflow: hidden;
+	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+}
+div#port #container:after{
+	content: '';
+	width: 300px;
+	height: 300px;
+	border: 2px solid #38ef7d;
+	position: absolute;
+	left: -45px;
+	top: -40px;
+	transform: rotateZ(45deg);
+}
+div#port #container:before{
+	content: '';
+	width: 200px;
+	height: 200px;
+	background: -webkit-linear-gradient(0deg, #11998e, #38ef7d);
+	position: absolute;
+	right: 0px;
+	bottom: -20px;
+	transform: rotateZ(45deg);
+	opacity: .5;
+}
+div#port #container h1{
+	width: 180px;
+	font-family: comforta;
+	background: -webkit-linear-gradient(45deg, #333, #11998e, #38ef7d);
+	background-size: cover;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin: 10px;
+}
+
+/*-- Layout Section --*/
+
+div.interface section .projeto{
+	width: 680px;
+	position: relative;
+	background-color: white;
+	margin: 15px 10px;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	font-family: comforta;
+	display: flex;
+}
+
+div.interface section .projeto div.info{
+	content: '';
+	width: 190px;
+	min-height: 350px;
+	background: -webkit-linear-gradient(135deg, #11998e, #38ef7d);
+	transform: rotateZ(0deg);
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	box-sizing: border-box;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+div.interface section .projeto .info:after{
+	content: '';
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	transform: rotateZ(0deg);
+	left: -55px;
+	top: -150px;
+	background: #333;
+	box-shadow: 
+	0 0 0 05px rgba(51, 51, 51, .4),
+	0 0 0 10px rgba(51, 51, 51, .4),
+	0 0 0 15px rgba(51, 51, 51, .4),
+	0 0 0 20px rgba(51, 51, 51, .4);
+	transform: rotateZ(5deg);
+}
+div.interface section .projeto div.img-container{
+	display: flex;
+	padding: 10px 0;
+	justify-content: center;
+	align-items: center;
+}
+div.interface section .projeto div.content{
+	display: flex;
+	padding: 10px 0;
+	justify-content: center;
+	flex: 1
+}
+div.interface section .projeto div.pic{
+	position: relative;
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	box-shadow: 0 2px 4px rgba(0,0,0,.8)inset;
+	z-index: 2;
+}
+div.interface section .projeto h1{
+	position: relative;
+	width: 100%;
+	color: #333;
+	font-weight: 600;
+}
+div.interface section .projeto .desc{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	color: #444;
+	box-sizing: border-box;
+	overflow-y: unset;
+	min-height: 175px;
+	resize: none;
+	-webkit-appearance: none;
+	border: none;
+	font-family: poppins;
+	outline: none;
+	font-size: 16px;
+	white-space: pre-line;
+	cursor: default;
+	flex: 1;
+}
+
+div.interface section .projeto div.user-info{
+	padding: 10px;
+	position: relative;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+div.interface section .projeto .info .pay{
+	position: relative;
+	font-size: 22px;
+	color: white;
+	z-index: 2;
+	align-self: flex-end;
+}
+
+
+div.interface section .projeto .skills{
+	position: relative;
+	bottom: unset;
+	left: unset;
+	width: 468px;
+	overflow-y: unset;
+	height: unset;
+	display: flex;
+	flex-wrap: wrap;
+	bottom: 0;
+	margin-top: 10px
+}
+
+div.interface section .projeto .skills::-webkit-scrollbar-track {
+    background-color: #eee;
+    position: absolute;
+}
+div.interface section .projeto .skills::-webkit-scrollbar {
+    width: 4px;
+}
+div.interface section .projeto .skills::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
+
+div.interface section .projeto .skills .container{
+	position: absolute;
+	max-height: 65px;
+	left: 0;
+	bottom: 0;
+}
+div.interface section .projeto .skills p{
+	background-color: #38d77d;
+	border-radius: 3px;
+	padding: 5px;
+	color: white;
+	margin: 2px 2px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	float: left;
+	cursor: pointer;
+}
+
+/* para empresas 
+
+div.interface section .projeto.emp .skills p{
+	background-color: #3a8dd5;
+	border-radius: 5px;
+	padding: 5px;
+	color: white;
+	margin: 2px 2px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+	float: left;
+}
+
+div.interface section .projeto.emp .desc::-webkit-scrollbar-thumb {
+    background: #3a7bd5;
+    border-radius: 10px;
+}
+
+*/
+/* Layoyt Aside */
+
+div.interface aside div#filters-select{
+	width: 100%;
+	height: 30px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	border-radius: 5px;
+	background:  #444;
+	color: white;
+	text-shadow: 1px 1px rgba(0,0,0,.4);
+	position: relative;
+	transition: .2s;
+	cursor: pointer;
+}
+div.interface aside div#filters-select.on{
+	height: 180px;
+}
+div.interface aside div#filters-select:before{
+	content: '▾';
+	position: absolute;
+	right: 0;
+	font-size: 35px;
+	top: -5px;
+}
+div.interface aside div#filters-select.on:before{
+	content: '▴';
+}
+
+div.interface aside div#filters-select ul{
+	list-style: none;
+	font-family: comforta;
+}
+div.interface aside div#filters-select ul li{
+	line-height: 30px;
+	box-sizing: border-box;
+	padding: 0 15px;
+	background: #444;
+}
+div.interface aside div#filters-select ul li:hover, div.interface aside div#filters-select ul li.option.on{
+	background-color: #555;
+}
+
+/* ----- */
+
+div#skills-select input{
+	position: relative;
+	top: 5px;
+	width: 100%;
+	font-family: comforta;
+	box-sizing: border-box;
+	padding: 8px 5px;
+	border: none;
+	border-radius: 5px;
+	outline: none;
+	box-shadow: 0 0 0 1px #aaa inset;
+}
+
+@keyframes bool {
+	0%{
+		transform: rotateZ(5deg);
+	}
+	50%{
+		transform: rotateZ(-5deg);
+	}
+	100%{
+		transform: rotateZ(5deg);
+}
