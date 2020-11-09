@@ -380,7 +380,7 @@ div#user-select{
 	transition-delay: .1s;
 }
 div#user-select.on{
-	height: 128px;
+	height: 96px;
 	transition-delay: 0;
 	box-shadow: 0 3px 4px rgba(0,0,0,.1);
 }
